@@ -2,7 +2,6 @@ import dspy
 from typing import Literal
 import logging
 import os
-import requests
 from app.models import Subject, Level
 
 # Configure logging
@@ -72,10 +71,6 @@ class SocraticTutorService:
             api_key = api_key.strip()
 
             logger.info(f"Initializing DSPy with OpenAI model: {openai_model}")
-            logger.info(f"API key present: {bool(api_key and len(api_key) > 10)}")
-
-            # First verify the OpenAI API key works with a direct API call
-            self._test_openai_direct_connection(api_key)
 
             # Use the specified model, ensuring it's a valid OpenAI model name
             # Default to gpt-4o if no specific model is provided
@@ -107,15 +102,6 @@ class SocraticTutorService:
             if self.lm:
                 dspy.configure(lm=self.lm)
                 logger.info("DSPy LM configuration successful")
-
-                # Test with a very simple prompt
-                try:
-                    test_result = self.lm("Testing DSPy connection", max_tokens=5)
-                    logger.info(f"DSPy test successful: {test_result}")
-                except Exception as test_err:
-                    logger.warning(
-                        f"DSPy test call failed, but continuing: {str(test_err)}"
-                    )
             else:
                 raise ValueError("Failed to initialize DSPy language model")
 
@@ -126,37 +112,6 @@ class SocraticTutorService:
         except Exception as e:
             logger.error(f"Failed to initialize SocraticTutorService: {str(e)}")
             raise
-
-    def _test_openai_direct_connection(self, api_key):
-        """Test direct OpenAI connection to verify API key and connectivity"""
-        try:
-            # Clean the API key again to be safe
-            api_key = api_key.strip()
-
-            # Simple test request to OpenAI API
-            headers = {
-                "Authorization": f"Bearer {api_key}",
-                "Content-Type": "application/json",
-            }
-            data = {
-                "model": "gpt-3.5-turbo",
-                "messages": [{"role": "user", "content": "Say test"}],
-                "max_tokens": 5,
-            }
-            response = requests.post(
-                "https://api.openai.com/v1/chat/completions",
-                headers=headers,
-                json=data,
-                timeout=10,
-            )
-            if response.status_code == 200:
-                logger.info("Direct OpenAI API connection test successful")
-            else:
-                logger.warning(
-                    f"OpenAI API test returned status {response.status_code}: {response.text}"
-                )
-        except Exception as e:
-            logger.warning(f"Direct OpenAI API test failed: {str(e)}")
 
     def get_socratic_response(
         self, question: str, subject: Subject, level: Level
