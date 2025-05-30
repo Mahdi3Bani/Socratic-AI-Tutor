@@ -1,0 +1,12 @@
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+dspy-ai==2.5.16
+openai==1.57.0
+python-dotenv==1.0.0
+pydantic==2.5.0
+python-multipart==0.0.6
+cors==1.0.1
+requests==2.31.0
+tenacity==8.2.3
+PyPDF2==3.0.1
+python-docx==0.8.11 

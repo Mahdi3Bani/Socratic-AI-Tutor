@@ -1,0 +1,38 @@
+services:
+  backend:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      # Ensure the API key has no whitespace or newlines with quotes
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - OPENAI_MODEL=${OPENAI_MODEL:-gpt-4o}
+      - ENVIRONMENT=development
+      - HOST=0.0.0.0
+      - PORT=8000
+      # Add environment variables to help with external API connections
+      - PYTHONUNBUFFERED=1
+      - REQUESTS_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crt
+      # Add OpenAI base URL explicitly
+      - OPENAI_API_BASE=https://api.openai.com/v1
+      # Connection timeouts
+      - OPENAI_TIMEOUT_SECONDS=30
+    volumes:
+      - ./app:/app/app
+      - ./data:/app/data
+    restart: unless-stopped
+    # Use bridge network mode for better compatibility
+    network_mode: "bridge"
+    # Use DNS from host to resolve external domains
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
+    # Ensure the container can reach external APIs
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://localhost:8000/api/v1/health" ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s

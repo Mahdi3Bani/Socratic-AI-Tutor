@@ -1,0 +1,102 @@
+[
+    {
+        "question": "Why does ice float on water?",
+        "subject": "physics",
+        "level": "beginner",
+        "reference_response": {
+            "clarifying_question": "Have you thought about what happens to water's density when it freezes?",
+            "concept_hint": "Consider how the molecular structure of water changes when it transitions from liquid to solid state.",
+            "feedback": "This is a great question that touches on an unusual property of water that's crucial for life on Earth!"
+        }
+    },
+    {
+        "question": "How do I solve a quadratic equation?",
+        "subject": "math",
+        "level": "intermediate",
+        "reference_response": {
+            "clarifying_question": "What methods have you tried so far to solve quadratic equations?",
+            "concept_hint": "Think about the different approaches you might use: factoring, completing the square, or perhaps a formula that works for all quadratic equations.",
+            "feedback": "Quadratic equations are foundational in algebra and appear in many real-world problems. You're asking a question that will build important mathematical skills!"
+        }
+    },
+    {
+        "question": "What causes photosynthesis?",
+        "subject": "biology",
+        "level": "beginner",
+        "reference_response": {
+            "clarifying_question": "What do you think plants need to perform photosynthesis?",
+            "concept_hint": "Consider what inputs a plant takes from its environment and what energy source drives the process.",
+            "feedback": "Great question! Understanding photosynthesis helps us see how energy flows through ecosystems."
+        }
+    },
+    {
+        "question": "Why did World War I start?",
+        "subject": "history",
+        "level": "intermediate",
+        "reference_response": {
+            "clarifying_question": "What event is commonly cited as the immediate trigger for World War I, and what do you think made this event escalate into a global conflict?",
+            "concept_hint": "Consider how long-term factors like nationalism, imperialism, and militarism combined with short-term triggers.",
+            "feedback": "This is an excellent historical inquiry that requires examining both immediate causes and underlying conditions."
+        }
+    },
+    {
+        "question": "How do chemical bonds form?",
+        "subject": "chemistry",
+        "level": "beginner",
+        "reference_response": {
+            "clarifying_question": "What do you already know about electrons and their role in atoms?",
+            "concept_hint": "Think about what makes atoms stable or unstable in terms of their electron configurations.",
+            "feedback": "Understanding chemical bonds is fundamental to chemistry - this question shows you're thinking about how matter combines at the atomic level!"
+        }
+    },
+    {
+        "question": "What is a black hole?",
+        "subject": "physics",
+        "level": "intermediate",
+        "reference_response": {
+            "clarifying_question": "What properties do you think a black hole has that make it different from other objects in space?",
+            "concept_hint": "Consider how gravity relates to mass and how extreme gravity might affect light and spacetime.",
+            "feedback": "Black holes represent some of the most extreme physics in our universe - it's fascinating to explore the limits of our physical laws!"
+        }
+    },
+    {
+        "question": "How does evolution work?",
+        "subject": "biology",
+        "level": "intermediate",
+        "reference_response": {
+            "clarifying_question": "What mechanisms do you think might cause species to change over time?",
+            "concept_hint": "Think about variation within populations and how certain traits might be more advantageous in specific environments.",
+            "feedback": "Evolution is a cornerstone concept in biology that helps explain the diversity of life - this is a great question to explore!"
+        }
+    },
+    {
+        "question": "How do I calculate probability?",
+        "subject": "math",
+        "level": "beginner",
+        "reference_response": {
+            "clarifying_question": "Can you give me an example of a probability problem you're trying to solve?",
+            "concept_hint": "Think about the relationship between favorable outcomes and total possible outcomes.",
+            "feedback": "Probability is such a useful concept in everyday decision-making and many scientific fields!"
+        }
+    },
+    {
+        "question": "What is the periodic table?",
+        "subject": "chemistry",
+        "level": "beginner",
+        "reference_response": {
+            "clarifying_question": "What patterns do you think scientists were trying to capture when they created the periodic table?",
+            "concept_hint": "Consider how elements might be organized based on their properties and atomic structure.",
+            "feedback": "The periodic table is one of science's most powerful organizational tools - great question!"
+        }
+    },
+    {
+        "question": "How do computers store information?",
+        "subject": "physics",
+        "level": "intermediate",
+        "reference_response": {
+            "clarifying_question": "Have you thought about what the smallest unit of information might be in a computer?",
+            "concept_hint": "Consider how physical states (like electrical charges) might represent abstract information.",
+            "feedback": "This question connects physics to information technology in a fascinating way!"
+        }
+    }
+]

@@ -1,0 +1,66 @@
+{
+    "subject": "physics",
+    "description": "Basic physics concepts for educational tutoring",
+    "entries": [
+        {
+            "text": "Newton's First Law states that an object at rest stays at rest, and an object in motion stays in motion with the same speed and direction, unless acted upon by an unbalanced force. This is also known as the law of inertia. Real-world examples include how seat belts work in cars, or how a ball keeps rolling until friction eventually stops it.",
+            "subject": "physics",
+            "level": "beginner",
+            "source": "Newton's Laws of Motion"
+        },
+        {
+            "text": "Newton's Second Law states that force equals mass times acceleration (F = ma). This means that the acceleration of an object is directly proportional to the net force acting on it and inversely proportional to its mass. For example, it takes more force to push a heavy shopping cart than a light one with the same acceleration.",
+            "subject": "physics",
+            "level": "beginner",
+            "source": "Newton's Laws of Motion"
+        },
+        {
+            "text": "Newton's Third Law states that for every action, there is an equal and opposite reaction. When one object exerts a force on another object, the second object exerts an equal force in the opposite direction on the first object. Examples include a rocket pushing exhaust gases downward while the gases push the rocket upward, or how a swimmer pushes water backward to move forward.",
+            "subject": "physics",
+            "level": "beginner",
+            "source": "Newton's Laws of Motion"
+        },
+        {
+            "text": "Potential energy is stored energy that depends on the position of an object. Gravitational potential energy depends on an object's height and is calculated as PE = mgh, where m is mass, g is gravitational acceleration, and h is height. For example, a book on a high shelf has more gravitational potential energy than the same book on a lower shelf.",
+            "subject": "physics",
+            "level": "beginner",
+            "source": "Energy Concepts"
+        },
+        {
+            "text": "Kinetic energy is the energy of motion and is calculated as KE = (1/2)mv², where m is mass and v is velocity. Examples include a moving car, a thrown ball, or a person running. The faster an object moves or the more massive it is, the more kinetic energy it has.",
+            "subject": "physics",
+            "level": "beginner",
+            "source": "Energy Concepts"
+        },
+        {
+            "text": "The conservation of energy principle states that energy cannot be created or destroyed, only converted from one form to another. In a closed system, the total energy remains constant. For example, as a pendulum swings, energy continuously transforms between potential and kinetic energy, but the total energy remains the same (minus small losses to friction).",
+            "subject": "physics",
+            "level": "intermediate",
+            "source": "Energy Concepts"
+        },
+        {
+            "text": "Momentum is defined as mass times velocity (p = mv). It is a vector quantity, meaning it has both magnitude and direction. The law of conservation of momentum states that in a closed system, the total momentum remains constant if no external forces act on the system. This explains phenomena like recoil when firing a gun or how billiard balls interact when they collide.",
+            "subject": "physics",
+            "level": "intermediate",
+            "source": "Momentum Concepts"
+        },
+        {
+            "text": "Buoyancy is the upward force exerted by a fluid on an object. Archimedes' principle states that this force equals the weight of the fluid displaced by the object. An object will float if its average density is less than the fluid's density. This explains why steel ships float despite steel being denser than water - the ship's hollow design makes its average density less than water.",
+            "subject": "physics",
+            "level": "intermediate",
+            "source": "Fluid Mechanics"
+        },
+        {
+            "text": "Light exhibits wave-particle duality, behaving as both a wave and a particle (photon) depending on the experimental setup. The wave nature explains phenomena like diffraction and interference, while the particle nature explains the photoelectric effect where light knocks electrons out of metals in a way that depends on frequency, not intensity.",
+            "subject": "physics",
+            "level": "advanced",
+            "source": "Quantum Physics"
+        },
+        {
+            "text": "Heisenberg's Uncertainty Principle states that there is a fundamental limit to the precision with which complementary properties of a particle (such as position and momentum) can be known simultaneously. The more precisely one property is measured, the less precisely the other can be known. This is not due to measurement limitations but is an inherent property of quantum systems.",
+            "subject": "physics",
+            "level": "advanced",
+            "source": "Quantum Physics"
+        }
+    ]
+}
